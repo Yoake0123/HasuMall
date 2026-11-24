@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>角色介绍 | 蓮ノ空モール</title>
+  <meta name="description" content="蓮ノ空女学院スクールアイドルクラブ 101–105 期角色图鉴：小队、性格、代表台词与角色弧线。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-crest">蓮</span>
+        <span class="brand-title">蓮ノ空モール<span class="brand-sub">HASUNOSORA'S MALL</span></span>
+      </a>
+      <nav aria-label="主导航">
+        <button class="nav-toggle" aria-label="展开菜单"><span></span><span></span><span></span></button>
+        <ul class="nav-list">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="characters.html" class="active">角色介绍</a></li>
+          <li><a href="story.html">剧情时间线</a></li>
+          <li><a href="music.html">音乐作品</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>角色介绍</h1>
+      <div class="hero-en">Characters</div>
+      <p class="desc">101–105 期共 12 位少女。
+        <br>点击卡片，查看她们的档案、性格与说过的话。</p>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" data-team-filter>
+          <button class="active" data-team="all" type="button">全部</button>
+          <button data-team="スリーズブーケ" type="button">スリーズブーケ</button>
+          <button data-team="DOLLCHESTRA" type="button">DOLLCHESTRA</button>
+          <button data-team="みらくらぱーく！" type="button">みらくらぱーく！</button>
+          <button data-team="Edel Note" type="button">Edel Note</button>
+          <button data-team="other" type="button">其他</button>
+        </div>
+        <div class="character-grid" id="character-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 角色详情弹窗 -->
+  <div class="modal" id="character-modal" hidden role="dialog" aria-modal="true" aria-label="角色详情">
+    <button class="modal-backdrop" aria-label="关闭弹窗"></button>
+    <div class="modal-panel"></div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">蓮ノ空女学院スクールアイドルクラブ · 主题介绍站</div>
+          <p class="footer-note">本站为前端课程上机作业，仅作学习展示用途，内容基于《Link! Like! Love Live!》公开活动记录整理。角色、商标及相关版权均归各自权利方所有。</p>
+        </div>
+        <nav class="footer-links" aria-label="页脚导航">
+          <a href="index.html">首页</a>
+          <a href="story.html">剧情</a>
+          <a href="music.html">音乐</a>
+        </nav>
+      </div>
+      <div class="footer-copy">前端开发高阶 课程作业 | 2026.11</div>
+    </div>
+  </footer>
+
+  <script src="js/characters-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
